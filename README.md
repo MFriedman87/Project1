@@ -4,10 +4,10 @@ Project 1
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](HW 12 Cloud Security.png)(https://user-images.githubusercontent.com/83511424/131421617-1009b504-2e5f-4f53-a41f-a3425adf17b3.png)
+Azure Cloud Network Diagram (https://user-images.githubusercontent.com/83511424/131421617-1009b504-2e5f-4f53-a41f-a3425adf17b3.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
 
 All playbook and configuration files can be foung in ~/Project1/Ansible
 
