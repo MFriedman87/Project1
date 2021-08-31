@@ -33,6 +33,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 Filebeat collects log files on the system. Metricbeat records machine metrics.
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 | Name     | Function | IP Address           | Operating System |   |
 |----------|----------|----------------------|------------------|---|
 | Jump Box | Gateway  | 10.0.0.5 (Private)   | Linux            |   |
