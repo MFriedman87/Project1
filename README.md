@@ -67,12 +67,15 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The advantage of automating configuration with Ansible is that you can configure multiple servers from that playbook.
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install docker.io
+- Install pip3
+- Install docker python module
+- Download and launch a docker web container
+- Enable docker services
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png) ![docker ps - Copy](https://user-images.githubusercontent.com/83511424/131423448-7270a30b-2ab7-4d35-8b60-597cbf89c9d4.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
