@@ -4,7 +4,8 @@ Project 1
 
 The files in this repository were used to configure the network depicted below.
 
-Azure Cloud Network Diagram (https://user-images.githubusercontent.com/83511424/131421617-1009b504-2e5f-4f53-a41f-a3425adf17b3.png)
+Azure Cloud Network Diagram [Network Diagram](https://user-images.githubusercontent.com/83511424/132070778-4a376fdc-8982-4bde-90d8-e19c51755a3a.png)
+
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
