@@ -4,11 +4,13 @@ Project 1
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](HW 12 Cloud Security.png)
+Azure Cloud Network Diagram [Network Diagram](https://user-images.githubusercontent.com/83511424/132070778-4a376fdc-8982-4bde-90d8-e19c51755a3a.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  -~/Project1/Ansible
+
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
+
+All playbook and configuration files can be foung in ~/Project1/Ansible
 
 This document contains the following details:
 - Description of the Topologu
@@ -32,23 +34,25 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 Filebeat collects log files on the system. Metricbeat records machine metrics.
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
-| Name     | Function | IP Address           | Operating System |   |
-|----------|----------|----------------------|------------------|---|
-| Jump Box | Gateway  | 10.0.0.5 (Private)   | Linux            |   |
-| Elk VM   | Server   | 172.16.5.4 (Private) | Linux            |   |
-| Web-1    | Server   | 10.0.0.9 (Private)   | Linux            |   |
-| Web-2    | Server   | 10.0.0.4 (Private    | Linux            |   |
+
+| Name     | Function | IP Address           | Operating System |
+|----------|----------|----------------------|------------------|
+| Jump Box | Gateway  | 10.0.0.5 (Private)   | Linux            |
+| Elk VM   | Server   | 172.16.5.4 (Private) | Linux            |
+| Web-1    | Server   | 10.0.0.9 (Private)   | Linux            |
+| Web-2    | Server   | 10.0.0.4 (Private    | Linux            |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the virtual machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+- _TODO: Add whitelisted IP addresses
 10.0.0.9 10.0.0.4 172.16.5.4
 Machines within the network can only be accessed by _____.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?
 Jump Box 10.0.0.5
+
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
@@ -61,22 +65,25 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - _TODO: What is the main advantage of automating configuration with Ansible?_
-
+The advantage of automating configuration with Ansible is that you can configure multiple servers from that playbook.
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install docker.io
+- Install pip3
+- Install docker python module
+- Download and launch a docker web container
+- Enable docker services
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png) ![docker ps - Copy](https://user-images.githubusercontent.com/83511424/131423448-7270a30b-2ab7-4d35-8b60-597cbf89c9d4.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- _TODO: List the IP addresses of the machines you are monitoring_ 10.0.0.9 10.0.0.4
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- _TODO: Specify which Beats you successfully installed_ Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
