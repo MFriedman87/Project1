@@ -35,12 +35,12 @@ Filebeat collects log files on the system. Metricbeat records machine metrics.
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address           | Operating System |   |
-|----------|----------|----------------------|------------------|---|
-| Jump Box | Gateway  | 10.0.0.5 (Private)   | Linux            |   |
-| Elk VM   | Server   | 172.16.5.4 (Private) | Linux            |   |
-| Web-1    | Server   | 10.0.0.9 (Private)   | Linux            |   |
-| Web-2    | Server   | 10.0.0.4 (Private    | Linux            |   |
+| Name     | Function | IP Address           | Operating System |
+|----------|----------|----------------------|------------------|
+| Jump Box | Gateway  | 10.0.0.5 (Private)   | Linux            |
+| Elk VM   | Server   | 172.16.5.4 (Private) | Linux            |
+| Web-1    | Server   | 10.0.0.9 (Private)   | Linux            |
+| Web-2    | Server   | 10.0.0.4 (Private    | Linux            |
 
 ### Access Policies
 
