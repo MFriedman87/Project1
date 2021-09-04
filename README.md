@@ -83,7 +83,7 @@ These Beats allow us to collect the following information from each machine:
 
 Filebeat collects log events, which we use to track and monitor user log messages. 
 
-Metricbeat collects metric data, which we use to track user system health and metrics.
+Metricbeat collects metric data, which we use to track system health and metrics.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
