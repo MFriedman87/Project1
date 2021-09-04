@@ -44,6 +44,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the virtual machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 10.0.0.9/10.0.0.4/172.16.5.4
+
 Machines within the network can only be accessed by the jumpbox.
 Jump Box 10.0.0.5
 
@@ -79,7 +80,7 @@ We have installed the following Beats on these machines:
 Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._Filebeat monitors specific log files or locations, collects log events, and forwards them to Elasticsearch or Logstash for indexing. Metricbeat is a lightweight shipper you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
