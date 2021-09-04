@@ -1,5 +1,5 @@
 # Project1
-Project 1
+
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -43,7 +43,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the virtual machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-10.0.0.9 10.0.0.4 172.16.5.4
+10.0.0.9/10.0.0.4/172.16.5.4
 Machines within the network can only be accessed by the jumpbox.
 Jump Box 10.0.0.5
 
@@ -73,10 +73,10 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_ 10.0.0.9 10.0.0.4
+10.0.0.9/10.0.0.4
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_ Filebeat and Metricbeat
+Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
