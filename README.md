@@ -98,12 +98,12 @@ SSH into the control node and follow the steps below:
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-ssh sysadmin@JumpBox(IP address)
+-ssh sysadmin@JumpBox(IP address)
 
-sudo docker start container zealous_sutherland
+-sudo docker start container zealous_sutherland
 
-sudo docker attach container zealous_sutherland
+-sudo docker attach container zealous_sutherland
 
-ansible-playbook elk.yml
+-ansible-playbook elk.yml
 
-(http://your.VM.IP:5601/app/kibana#/home)
+-(http://your.VM.IP:5601/app/kibana#/home)
