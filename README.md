@@ -82,6 +82,7 @@ Filebeat and Metricbeat
 These Beats allow us to collect the following information from each machine:
 
 Filebeat collects log events, which we use to track and monitor user log messages. 
+
 Metricbeat collects metric data, which we use to track user system health and metrics.
 
 ### Using the Playbook
