@@ -26,14 +26,10 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly efficient and responsive to users, in addition to restricting bad traffic to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 Load balancers protect your system from DDOS attacks by only allowing good traffic through. The advantage of a jump box is it allows you to connect to your system in a secure manner while being monitored.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file system and system metrics.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
 Filebeat collects log files on the system. Metricbeat records machine metrics.
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address                                  | Operating System |
 |----------|----------|---------------------------------------------|------------------|
@@ -47,10 +43,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the virtual machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses
 10.0.0.9 10.0.0.4 172.16.5.4
 Machines within the network can only be accessed by the jumpbox.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?
 Jump Box 10.0.0.5
 
 A summary of the access policies in place can be found in the table below.
@@ -65,10 +59,8 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
 The advantage of automating configuration with Ansible is that you can configure multiple servers from that playbook.
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - Install docker.io
 - Install pip3
 - Install docker python module
