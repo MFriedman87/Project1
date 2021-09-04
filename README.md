@@ -80,7 +80,7 @@ We have installed the following Beats on these machines:
 Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._Filebeat monitors specific log files or locations, collects log events, and forwards them to Elasticsearch or Logstash for indexing. Metricbeat is a lightweight shipper you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+Filebeat monitors specific log files or locations, collects log events, and forwards them to Elasticsearch or Logstash for indexing. Examples of what you should expect to see are activitylogs, platformlogs, signinlogs and auditlogs. Metricbeat is a lightweight shipper you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Examples of what you should expect to see are resource_id, resource_group, resource_type and resource_query.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
