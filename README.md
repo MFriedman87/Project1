@@ -54,8 +54,8 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------------|
 | Jump Box |        Yes          |     My home IP address     |
 | ELK VM   |        Yes          |     My home IP address     |
-| Web-1    |        Yes          |     10.0.0.5               |
-| Web-2    |        Yes          |     10.0.0.5               |
+| Web-1    |        No           |     10.0.0.5               |
+| Web-2    |        No           |     10.0.0.5               |
 
 ### Elk Configuration
 
