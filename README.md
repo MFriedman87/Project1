@@ -4,7 +4,7 @@ Azure Cloud Network
 
 The files in this repository were used to configure the network depicted below.
 
-Azure Cloud Network Diagram [Network Diagram](https://user-images.githubusercontent.com/83511424/132070778-4a376fdc-8982-4bde-90d8-e19c51755a3a.png)
+Azure Cloud Network Diagram ![Network Diagram](https://user-images.githubusercontent.com/83511424/132109856-1d235367-92d9-4a12-b29d-e110455e9997.png)
 
 
 
